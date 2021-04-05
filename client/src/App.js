@@ -9,8 +9,7 @@ import './App.css';
 function App() {
   const [pageSelected,setPageSelected] = useState(null);
   if(pageSelected==='drawing'){
-    return(
-      
+    return(     
       <div className="App NoScroll">  
         <h2 onClick={() => setPageSelected(null)}>
           OUTERSPACE ARTIST
@@ -56,7 +55,6 @@ function App() {
   iconList.push(Icons[i]);
 }
  iconList.concat(Icons.map((x) => x));
- console.log(iconList.length);
   return (
         
       <div className='page'>     

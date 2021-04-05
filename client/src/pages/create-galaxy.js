@@ -97,17 +97,7 @@ const CreateGalaxy = (props) => {
               </fieldset>
  
               
-              { /*(
-                <div>
-
-                   <img
-                    //onLoad={(e) => setGalaxyImage(props.)}
-                    className="pure-img"
-                    src={imageUri}
-                    alt="your galaxy"
-                  />
-                </div>
-              )*/}
+            
    
 
 

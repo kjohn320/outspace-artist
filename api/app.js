@@ -29,7 +29,7 @@ const schema = makeExecutableSchema({
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var testAPIRouter = require("./routes/testAPI");
+var testAPIRouter = require("./routes/uploadFile");
 
 var app = express();
 
@@ -57,7 +57,7 @@ app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use("/testAPI", testAPIRouter);
+app.use("/uploadFile", testAPIRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
