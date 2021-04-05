@@ -1,0 +1,91 @@
+.background-space{
+  position: sticky; 
+  top: 0;
+  width:100%;
+  z-index: 4;
+}
+.Galaxy{
+
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+
+}
+.Galaxy-text{
+  background-size: 100% 100%;
+background-repeat: no-repeat;
+  background-image:url('./pages/assets/16119.png');
+}
+.galaxy-table{
+  min-height: 100vh;
+  width:100%;
+  background-size: 100% ;
+  background-repeat: no-repeat;
+ /*   background-image:url('./pages/assets/16119.png'); */
+
+}
+.galaxy-table thead td:first-child{
+  text-align: left;
+  z-index: 3;
+}
+.galaxy-table thead td:last-child{
+  text-align: right;
+  z-index: 3;
+}
+.galaxy-table thead{
+  z-index: 3;
+}
+.galaxy-title{
+  color: #E6E6FA;
+  text-shadow: 2px 2px #373fff ;
+  letter-spacing: .5rem;
+  font-size: calc(2rem + 2vmin);
+  text-align: center;
+  font-family: 'Lato';
+}
+.galaxy-subtitle{
+  letter-spacing: .5rem;
+  font-size: calc(.5rem + 1vmin);
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: rgba(172,170,190, 1);
+}
+.galaxy-table tr td{
+  vertical-align: unset;
+  padding:0;
+}
+.Galaxy-Container{
+
+  max-width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(.5rem + 2vmin);
+  color: white;
+}
+.Galaxy-button { 
+  background-color: transparent;
+  border-style: none;
+}
+.Galaxy-button:disabled svg{
+  color:transparentize($color: #ffffff, $amount: 1);
+}
+.Galaxy-button i { 
+  font-size:3rem;
+  border-style: none;
+  color:transparentize($color: #ffffff, $amount: 0);
+}
+.Galaxy-main{
+
+  flex-grow: 1;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

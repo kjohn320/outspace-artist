@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Astro';
+  src: url('./pages/assets/Astro.woff2') format('woff2'),
+      url('./pages/assets/Astro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body{
+  font-family: 'Playfair Display', serif;
+  color: rgba(172,170,190, 1);
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  font-size: 14px;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+}
+.img-box {
+  padding: .5em  !important;
+  max-width: 70px !important;
+
+}
+.img-box-selected {
+  border: 1px solid #999 !important;
+  border-radius: 50%;
+}
+.img-box:hover{
+  cursor: pointer;
+}
+
+
+.NoScroll {
+  overflow: hidden;
+}
+.Scroll {
+  overflow: unset;
+}
+.App-Rocket {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-logo {
+  z-index: -1;
+  max-height: 30vh;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+h2{
+  font-family: 'Astro',serif;
+  letter-spacing: 10px;
+  font-weight: normal;
+  font-size: calc(30px + 1vmin);
+  color: #373fff;
+  text-shadow: 2px 2px #dad8ec;
+}
+.App-header {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(.5rem + 2vmin);
+  color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto:wght@100&display=swap');
+ 
+.Homepage-main{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(.5rem + 2vmin);
+  color: white;
+}
+h3{
+  color: #E6E6FA;
+  text-shadow: 2px 2px #373fff ;
+  letter-spacing: .5rem;
+  font-size: calc(2rem + 2vmin);
+  text-align: center;
+  font-family: 'Lato';
+}
+.App-link {
+  color: #61dafb;
+}
+
+.App-button{
+  z-index: 1;
+  font-family: 'Roboto','sans-serif';
+  font-size: calc(5px + 2vmin);
+}
+
+.margin-sm{
+  margin: 1em;
+}
